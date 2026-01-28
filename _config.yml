@@ -1,3 +1,4 @@
+theme: minima
 header_pages:
   - research.md
   - publications.md
@@ -18,4 +19,5 @@ navigation:
   - title: Join Us
 
     url: /join/
+
 
