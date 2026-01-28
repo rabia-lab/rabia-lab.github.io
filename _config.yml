@@ -1,4 +1,4 @@
-nav:
+navigation:
   - title: Home
     url: /
   - title: Research
@@ -10,4 +10,5 @@ nav:
   - title: People
     url: /people/
   - title: Join Us
+
     url: /join/
