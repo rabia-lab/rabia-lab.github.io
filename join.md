@@ -3,7 +3,7 @@ layout: page
 title: Contact & Join Us
 permalink: /join/
 ---
-
+ 
 We are always interested in motivated students and collaborators working at the intersection of **precision agriculture, AI, remote sensing, and robotics**.
 
 ### Prospective Students
@@ -17,3 +17,4 @@ Ahmed.Rabia@ndsu.edu
 
 📍 **Location:**  
 North Dakota State University, Fargo, ND
+
