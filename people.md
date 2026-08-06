@@ -15,7 +15,7 @@ Precision Agriculture, Remote Sensing, AI, Robotics
 - Yoko (George) Kosugi – ABEN, Research Focus: Agronomy, Remote sensing, GIS
 
 ### Undergraduate Researchers
-- Name – Major
+- Georgina Sieh – Data Science, Research Focus: AI, ML, Data Analytics
 
 ### Alumni
 - Name – Current Position / Institution
