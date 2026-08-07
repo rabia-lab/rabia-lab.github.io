@@ -20,5 +20,5 @@ Precision Agriculture, Remote Sensing, AI, Robotics
 - Georgina Sieh – Data Science, Research Focus: AI, ML, Data Analytics
 
 ### Alumni
-- Name – Current Position / Institution
+- Omar Alkhateeb – PhD / Natural Resources Management (Graduation year 2024)
 
