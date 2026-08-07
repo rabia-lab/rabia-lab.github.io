@@ -15,6 +15,7 @@ Precision Agriculture, Remote Sensing, AI, Robotics
 - Yoko (George) Kosugi – ABEN, Research Focus: Agronomy, Remote sensing, GIS
 - Mamoona Nisar - CS, Research Focus: Computer Vision for Plant Phenotyping and Plant Health Analysis
 - Biplab Kumar Sarkar - CS, Research Focus: Edge Computing for Precision Agriculture Data Collection and Analysis
+- Santosh Pangeni- CS, Research Focus: Software Security, Computer Vision, Applications of AI, and ML
 
 ### Undergraduate Researchers
 - Georgina Sieh – Data Science, Research Focus: AI, ML, Data Analytics
