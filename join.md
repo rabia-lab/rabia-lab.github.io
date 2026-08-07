@@ -16,5 +16,6 @@ We welcome collaboration with researchers, industry partners, and growers.
 Ahmed.Rabia@ndsu.edu  
 
 📍 **Location:**  
-North Dakota State University, Fargo, ND
+ Ladd 104 K, 1231 Albrecht Blvd, Fargo, ND 58102
+
 
