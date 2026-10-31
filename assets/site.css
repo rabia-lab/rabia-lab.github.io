@@ -1,0 +1,598 @@
+@charset "UTF-8";
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
+
+/** Basic styling */
+body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
+
+/** `main` element */
+main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
+
+/** Images */
+img { max-width: 100%; vertical-align: middle; }
+
+/** Figures */
+figure > img { display: block; }
+
+figcaption { font-size: 14px; }
+
+/** Lists */
+ul, ol { margin-left: 30px; }
+
+li > ul, li > ol { margin-bottom: 0; }
+
+/** Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+/** Links */
+a { color: #2a7ae2; text-decoration: none; }
+a:visited { color: #1756a9; }
+a:hover { color: #111; text-decoration: underline; }
+.social-media-list a:hover { text-decoration: none; }
+.social-media-list a:hover .username { text-decoration: underline; }
+
+/** Blockquotes */
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+blockquote > :last-child { margin-bottom: 0; }
+
+/** Code formatting */
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+
+code { padding: 1px 5px; }
+
+pre { padding: 8px 12px; overflow-x: auto; }
+pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+/** Wrapper */
+.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
+
+/** Clearfix */
+.wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
+
+/** Icons */
+.svg-icon { width: 16px; height: 16px; display: inline-block; fill: #828282; padding-right: 5px; vertical-align: text-top; }
+
+.social-media-list li + li { padding-top: 5px; }
+
+/** Tables */
+table { margin-bottom: 30px; width: 100%; text-align: left; color: #3f3f3f; border-collapse: collapse; border: 1px solid #e8e8e8; }
+table tr:nth-child(even) { background-color: #f7f7f7; }
+table th, table td { padding: 10px 15px; }
+table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-color: #c9c9c9; }
+table td { border: 1px solid #e8e8e8; }
+
+/** Site header */
+.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; }
+
+.site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
+.site-title, .site-title:visited { color: #424242; }
+
+.site-nav { float: right; line-height: 54px; }
+.site-nav .nav-trigger { display: none; }
+.site-nav .menu-icon { display: none; }
+.site-nav .page-link { color: #111; line-height: 1.5; }
+.site-nav .page-link:not(:last-child) { margin-right: 20px; }
+@media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 15px; background-color: #fdfdfd; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
+  .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; }
+  .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
+  .site-nav .menu-icon > svg { fill: #424242; }
+  .site-nav input ~ .trigger { clear: both; display: none; }
+  .site-nav input:checked ~ .trigger { display: block; padding-bottom: 5px; }
+  .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; }
+  .site-nav .page-link:not(:last-child) { margin-right: 0; } }
+
+/** Site footer */
+.site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
+
+.footer-heading { font-size: 18px; margin-bottom: 15px; }
+
+.contact-list, .social-media-list { list-style: none; margin-left: 0; }
+
+.footer-col-wrapper { font-size: 15px; color: #828282; margin-left: -15px; }
+
+.footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
+
+.footer-col-1 { width: -webkit-calc(35% - (30px / 2)); width: calc(35% - (30px / 2)); }
+
+.footer-col-2 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
+
+.footer-col-3 { width: -webkit-calc(45% - (30px / 2)); width: calc(45% - (30px / 2)); }
+
+@media screen and (max-width: 800px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); }
+  .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
+@media screen and (max-width: 600px) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
+/** Page content */
+.page-content { padding: 30px 0; flex: 1; }
+
+.page-heading { font-size: 32px; }
+
+.post-list-heading { font-size: 28px; }
+
+.post-list { margin-left: 0; list-style: none; }
+.post-list > li { margin-bottom: 30px; }
+
+.post-meta { font-size: 14px; color: #828282; }
+
+.post-link { display: block; font-size: 24px; }
+
+/** Posts */
+.post-header { margin-bottom: 30px; }
+
+.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
+@media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
+
+.post-content { margin-bottom: 30px; }
+.post-content h2 { font-size: 32px; }
+@media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
+.post-content h3 { font-size: 26px; }
+@media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
+.post-content h4 { font-size: 20px; }
+@media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+
+/** Syntax highlighting styles */
+.highlight { background: #fff; }
+.highlighter-rouge .highlight { background: #eef; }
+.highlight .c { color: #998; font-style: italic; }
+.highlight .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .k { font-weight: bold; }
+.highlight .o { font-weight: bold; }
+.highlight .cm { color: #998; font-style: italic; }
+.highlight .cp { color: #999; font-weight: bold; }
+.highlight .c1 { color: #998; font-style: italic; }
+.highlight .cs { color: #999; font-weight: bold; font-style: italic; }
+.highlight .gd { color: #000; background-color: #fdd; }
+.highlight .gd .x { color: #000; background-color: #faa; }
+.highlight .ge { font-style: italic; }
+.highlight .gr { color: #a00; }
+.highlight .gh { color: #999; }
+.highlight .gi { color: #000; background-color: #dfd; }
+.highlight .gi .x { color: #000; background-color: #afa; }
+.highlight .go { color: #888; }
+.highlight .gp { color: #555; }
+.highlight .gs { font-weight: bold; }
+.highlight .gu { color: #aaa; }
+.highlight .gt { color: #a00; }
+.highlight .kc { font-weight: bold; }
+.highlight .kd { font-weight: bold; }
+.highlight .kp { font-weight: bold; }
+.highlight .kr { font-weight: bold; }
+.highlight .kt { color: #458; font-weight: bold; }
+.highlight .m { color: #099; }
+.highlight .s { color: #d14; }
+.highlight .na { color: #008080; }
+.highlight .nb { color: #0086B3; }
+.highlight .nc { color: #458; font-weight: bold; }
+.highlight .no { color: #008080; }
+.highlight .ni { color: #800080; }
+.highlight .ne { color: #900; font-weight: bold; }
+.highlight .nf { color: #900; font-weight: bold; }
+.highlight .nn { color: #555; }
+.highlight .nt { color: #000080; }
+.highlight .nv { color: #008080; }
+.highlight .ow { font-weight: bold; }
+.highlight .w { color: #bbb; }
+.highlight .mf { color: #099; }
+.highlight .mh { color: #099; }
+.highlight .mi { color: #099; }
+.highlight .mo { color: #099; }
+.highlight .sb { color: #d14; }
+.highlight .sc { color: #d14; }
+.highlight .sd { color: #d14; }
+.highlight .s2 { color: #d14; }
+.highlight .se { color: #d14; }
+.highlight .sh { color: #d14; }
+.highlight .si { color: #d14; }
+.highlight .sx { color: #d14; }
+.highlight .sr { color: #009926; }
+.highlight .s1 { color: #d14; }
+.highlight .ss { color: #990073; }
+.highlight .bp { color: #999; }
+.highlight .vc { color: #008080; }
+.highlight .vg { color: #008080; }
+.highlight .vi { color: #008080; }
+.highlight .il { color: #099; }
+
+/* =========================================================================== TOKENS — change these and the whole site follows. `--green` is the one colour that matters most; swap it for the official NDSU green if the university brand guide requires a specific value. =========================================================================== */
+:root { --green: #1e5d4b; --green-deep: #143f33; --green-soft: #dceae3; /* Fixed regardless of theme — used only where the background is always a literal #fff (the hero button sits on a photo scrim, not on --surface), so it must not flip to the pale on-dark-ground shade in dark mode. */ --green-on-white: #143f33; --soil: #a85c24; /* accent: eyebrows, dates, hover states */ --soil-soft: #f4e4d6; --paper: #f4f6f2; --surface: #ffffff; --ink: #11201c; --ink-soft: #47574f; --ink-faint: #56665e; --rule: #d5dcd5; --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif, serif; --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; --mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace; --measure: 68ch; --shell: 1120px; --radius: 4px; }
+
+@media (prefers-color-scheme: dark) { :root { --green: #6bc9a0; --green-deep: #a6e3c6; --green-soft: #16302a; --soil: #e39355; --soil-soft: #2f2118; --paper: #0b1512; --surface: #111f1b; --ink: #e7eee9; --ink-soft: #a0b3a9; --ink-faint: #8aa096; --rule: #25392f; } }
+/* =========================================================================== BASE — overrides Minima's defaults =========================================================================== */
+html { scroll-behavior: smooth; }
+
+body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; text-wrap: balance; color: var(--ink); }
+
+/* `a:visited` MUST be here. Minima ships `a:visited { color: #1756a9 }`, and because :visited is more specific than a bare `a`, every link the visitor had already clicked reverted to Minima's blue. */
+a, a:visited { color: var(--green); text-underline-offset: 2px; }
+
+a:hover, a:visited:hover { color: var(--soil); }
+
+a:focus-visible, button:focus-visible, .lab-nav-btn:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 2px; }
+
+.lab-shell { max-width: var(--shell); margin-inline: auto; padding-inline: 24px; }
+
+.lab-main { display: block; }
+
+.lab-eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--soil); margin: 0 0 10px; }
+
+.lab-lede { font-size: 19px; color: var(--ink-soft); max-width: 60ch; margin: 14px 0 0; }
+
+/* Skip link — visible only when focused by keyboard */
+.lab-skip { position: absolute; left: -9999px; top: 0; z-index: 999; background: var(--green); color: var(--surface); padding: 10px 16px; border-radius: 0 0 var(--radius) 0; }
+
+.lab-skip:focus { left: 0; color: var(--surface); }
+
+/* =========================================================================== HEADER =========================================================================== */
+.lab-header { background: var(--surface); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 50; }
+
+.lab-header-in { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 70px; flex-wrap: wrap; }
+
+.lab-brand { display: flex; align-items: center; gap: 11px; text-decoration: none; color: var(--ink); }
+
+.lab-brand:hover { color: var(--ink); }
+
+.lab-mark { width: 26px; height: 26px; flex: none; border-radius: 5px; background: linear-gradient(150deg, var(--green), var(--soil)); }
+
+.lab-brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+
+.lab-brand-text strong { font-family: var(--serif); font-size: 19px; font-weight: 600; letter-spacing: -0.02em; }
+
+.lab-brand-text em { font-family: var(--mono); font-style: normal; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); }
+
+.lab-nav { display: flex; align-items: center; gap: 22px; }
+
+.lab-nav-link { font-size: 14.5px; font-weight: 500; color: var(--ink-soft); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
+
+.lab-nav-link:hover { color: var(--green); border-bottom-color: var(--green); }
+
+.lab-nav-link[aria-current] { color: var(--green); border-bottom-color: var(--green); font-weight: 650; }
+
+.lab-nav-link.is-cta { background: var(--green); color: var(--surface); padding: 8px 16px; border-radius: var(--radius); border-bottom: 0; font-weight: 650; }
+
+.lab-nav-link.is-cta:hover { background: var(--green-deep); color: var(--surface); }
+
+/* Mobile menu: a real <button> toggled by script. Without JS the nav simply stays visible. */
+.lab-nav-btn { display: none; background: transparent; font: inherit; }
+
+@media (max-width: 820px) { .js .lab-nav-btn { display: inline-block; cursor: pointer; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: var(--radius); padding: 7px 12px; color: var(--ink); }
+  .lab-nav { display: flex; flex-direction: column; align-items: flex-start; gap: 0; width: 100%; border-top: 1px solid var(--rule); padding-bottom: 10px; }
+  .js .lab-nav:not(.is-open) { display: none; }
+  .lab-nav-link { width: 100%; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .lab-nav-link.is-cta { margin-top: 12px; width: auto; padding: 10px 18px; } }
+/* =========================================================================== HERO =========================================================================== */
+.lab-hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--rule); background: var(--green-deep); min-height: clamp(360px, 52vw, 560px); display: flex; align-items: flex-end; }
+
+.lab-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+
+/* Legibility scrim — without this, white text over a bright field photo fails contrast. Darkest at the bottom where the text sits. */
+.lab-hero::after { content: ""; position: absolute; inset: 0; z-index: 2; /* Two-layer scrim. A flat overlay dark enough to read against would bury the photograph, so instead: layer 1 — a soft horizontal wash anchored to the left, where the text actually sits, fading out well before the right edge layer 2 — a light bottom-up wash for the buttons and overall footing The right two-thirds of the image (drone, field, crew) stays close to full brightness. */ background: linear-gradient(100deg, rgba(9, 24, 19, 0.88) 0%, rgba(9, 24, 19, 0.72) 28%, rgba(9, 24, 19, 0.34) 52%, rgba(9, 24, 19, 0.06) 78%, rgba(9, 24, 19, 0) 100%), linear-gradient(to top, rgba(9, 24, 19, 0.55) 0%, rgba(9, 24, 19, 0.22) 42%, rgba(9, 24, 19, 0.06) 75%, rgba(9, 24, 19, 0) 100%); }
+
+/* On narrow screens the text spans the full width, so the left-anchored wash no longer covers it — fall back to a plain vertical scrim. */
+@media (max-width: 700px) { .lab-hero::after { background: linear-gradient(to top, rgba(9, 24, 19, 0.9) 0%, rgba(9, 24, 19, 0.74) 45%, rgba(9, 24, 19, 0.52) 100%); } }
+.lab-hero-in { position: relative; z-index: 3; padding-block: clamp(36px, 6vw, 64px); width: 100%; }
+
+/* Belt-and-braces on top of the scrim: a photo's brightest patch (sky, equipment) can still land under any given word. A tight shadow keeps every line readable regardless of what's directly behind it. */
+.lab-hero-in h1 { color: #fff; font-size: clamp(32px, 5.4vw, 58px); max-width: 17ch; margin: 0; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45), 0 4px 16px rgba(0, 0, 0, 0.35); }
+
+.lab-hero-in .lab-lede { color: rgba(255, 255, 255, 0.92); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.lab-hero-in .lab-eyebrow { color: #f7d5a6; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
+
+.lab-hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 0; }
+
+.lab-btn { display: inline-block; background: var(--green); color: var(--surface); font-size: 15px; font-weight: 650; padding: 11px 22px; border-radius: var(--radius); text-decoration: none; border: 1px solid var(--green); }
+
+.lab-btn:hover { background: var(--green-deep); border-color: var(--green-deep); color: var(--surface); }
+
+.lab-hero .lab-btn { background: #fff; color: var(--green-on-white); border-color: #fff; }
+
+.lab-hero .lab-btn:hover { background: #f0c48a; border-color: #f0c48a; color: #2a1a0c; }
+
+.lab-hero .lab-btn.is-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.6); }
+
+.lab-hero .lab-btn.is-ghost:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+
+.lab-btn.is-ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+
+.lab-btn.is-ghost:hover { background: var(--green-soft); color: var(--ink); border-color: var(--green); }
+
+/* =========================================================================== STAT STRIP =========================================================================== */
+.lab-stats { background: var(--surface); border-bottom: 1px solid var(--rule); }
+
+.lab-stats-in { display: flex; flex-wrap: wrap; }
+
+.lab-stat { flex: 1 1 180px; padding: 20px 24px 20px 0; border-right: 1px solid var(--rule); }
+
+.lab-stat:first-child { padding-left: 0; }
+
+.lab-stat:last-child { border-right: 0; }
+
+.lab-stat b { display: block; font-family: var(--serif); font-size: 30px; font-weight: 600; color: var(--green); line-height: 1; font-variant-numeric: tabular-nums; }
+
+.lab-stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); }
+
+/* =========================================================================== PAGE HEADER + PROSE =========================================================================== */
+.lab-page-head { background: var(--surface); border-bottom: 1px solid var(--rule); padding-block: clamp(34px, 5vw, 58px); }
+
+.lab-page-head h1 { font-size: clamp(30px, 4.6vw, 48px); margin: 0; }
+
+.lab-prose { padding-block: clamp(30px, 4vw, 48px); }
+
+/* `:not([class])` keeps this off .lab-cards / .lab-pubs / .lab-people, which are grids and must not be clamped to the prose measure. */
+.lab-prose > p, .lab-prose > ul:not([class]), .lab-prose > ol:not([class]), .lab-prose > blockquote { max-width: var(--measure); color: var(--ink-soft); }
+
+.lab-prose > h2 { font-size: 27px; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); max-width: var(--measure); }
+
+.lab-prose > h3 { font-size: 20px; margin: 28px 0 8px; }
+
+.lab-prose > h2:first-child, .lab-prose > h3:first-child { margin-top: 0; }
+
+.lab-prose img { max-width: 100%; height: auto; border-radius: var(--radius); }
+
+.lab-prose table { display: block; overflow-x: auto; max-width: 100%; }
+
+/* =========================================================================== BLOCKS + CARDS =========================================================================== */
+.lab-block { padding-block: clamp(28px, 4vw, 46px); }
+
+.lab-block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 2px solid var(--ink); padding-bottom: 10px; margin-bottom: 22px; }
+
+.lab-block-head h2 { font-size: 26px; margin: 0; }
+
+.lab-block-head a { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+
+.lab-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(258px, 1fr)); gap: 16px; }
+
+.lab-card { background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid var(--green); border-radius: var(--radius); padding: 20px; }
+
+.lab-card h3 { font-size: 18px; margin: 0 0 7px; }
+
+.lab-card p { font-size: 15px; color: var(--ink-soft); margin: 0; }
+
+/* =========================================================================== PEOPLE =========================================================================== */
+.lab-group { margin-bottom: 40px; }
+
+.lab-group > h2 { font-size: 15px; font-family: var(--mono); font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--soil); border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin: 0 0 20px; }
+
+.lab-people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(224px, 1fr)); gap: 22px; }
+
+.lab-person { background: none; }
+
+.lab-person img, .lab-person .lab-avatar { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--rule); margin-bottom: 11px; display: block; }
+
+.lab-avatar { background: linear-gradient(155deg, var(--green-soft), var(--soil-soft)); display: grid; place-items: center; font-family: var(--serif); font-size: 34px; color: var(--green); }
+
+.lab-person h3 { font-size: 17px; margin: 0 0 3px; }
+
+.lab-person .lab-role { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 6px; }
+
+.lab-person .lab-focus { font-size: 14px; color: var(--ink-soft); margin: 0 0 8px; }
+
+/* Profile links (GitHub / Scholar / Email). These were plain 13px text at the very bottom of the card — after a full bio and the research-focus line they were effectively invisible. Styled as bordered pills to match the PDF/DOI buttons on the Publications page, so they read as things you can click. */
+.lab-person .lab-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+
+.lab-person .lab-links a { font-family: var(--mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--green); border: 1px solid var(--rule); border-radius: 2px; padding: 3px 9px; }
+
+.lab-person .lab-links a:hover { background: var(--green); border-color: var(--green); color: var(--surface); }
+
+/* Alumni render as a compact list, not cards */
+.lab-alumni { list-style: none; margin: 0; padding: 0; }
+
+.lab-alumni li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--rule); color: var(--ink-soft); font-size: 15px; }
+
+.lab-alumni b { color: var(--ink); font-weight: 650; }
+
+.lab-alumni time { font-family: var(--mono); font-size: 13px; color: var(--ink-faint); }
+
+/* =========================================================================== PUBLICATIONS =========================================================================== */
+.lab-year { font-family: var(--mono); font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: var(--soil); border-bottom: 1px solid var(--rule); padding-bottom: 7px; margin: 34px 0 16px; }
+
+.lab-year:first-child { margin-top: 0; }
+
+.lab-pubs { list-style: none; margin: 0; padding: 0; }
+
+.lab-pub { border-left: 2px solid var(--rule); padding: 0 0 0 16px; margin-bottom: 20px; }
+
+.lab-pub:hover { border-left-color: var(--green); }
+
+.lab-pub-title { display: block; font-size: 16.5px; font-weight: 650; line-height: 1.35; margin-bottom: 4px; }
+
+.lab-pub-meta { display: block; font-size: 14.5px; color: var(--ink-soft); margin-bottom: 7px; }
+
+.lab-pub-links { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.lab-pub-links a { font-family: var(--mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--rule); border-radius: 2px; padding: 3px 9px; color: var(--green); }
+
+.lab-pub-links a:hover { background: var(--green); color: var(--surface); border-color: var(--green); }
+
+/* =========================================================================== NEWS =========================================================================== */
+.lab-news { list-style: none; margin: 0; padding: 0; }
+
+.lab-news li { display: flex; gap: 18px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+
+.lab-news time { font-family: var(--mono); font-size: 11.5px; font-weight: 600; letter-spacing: 0.06em; color: var(--soil); white-space: nowrap; flex: none; }
+
+.lab-news a { text-decoration: none; font-weight: 550; }
+
+.lab-news a:hover { text-decoration: underline; }
+
+/* =========================================================================== CTA BAND =========================================================================== */
+.lab-cta-band { background: var(--green-soft); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-top: 20px; }
+
+.lab-cta-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 26px; padding-block: clamp(30px, 4.5vw, 48px); }
+
+.lab-cta-in h2 { font-size: 27px; margin: 0 0 8px; }
+
+.lab-cta-in p { color: var(--ink-soft); max-width: 52ch; margin: 0; }
+
+.lab-cta-in .lab-hero-cta { margin: 0; }
+
+/* =========================================================================== FOOTER =========================================================================== */
+.lab-footer { background: var(--surface); border-top: 1px solid var(--rule); margin-top: 0; }
+
+.lab-footer-in { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; padding-block: 40px 26px; }
+
+.lab-footer-col { display: flex; flex-direction: column; gap: 5px; font-size: 14.5px; color: var(--ink-soft); }
+
+.lab-footer-col strong { font-family: var(--serif); font-size: 18px; color: var(--ink); font-weight: 600; }
+
+.lab-footer-h { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 3px; }
+
+.lab-footer-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding-block: 16px 30px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 11.5px; color: var(--ink-faint); }
+
+/* =========================================================================== MOTION =========================================================================== */
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+/* =========================================================================== ADDITIONS — feedback round, 2026-08-11 =========================================================================== */
+/* --- People: bios + fixed 3-across grid for graduate students ------------ */
+/* 6 graduate students -> 3 across x 2 rows. The drop to 2-up was previously at 900px, which fired on ordinary laptop windows and made it look like a 2-column grid; held to 720px so 3-across survives normal screens. */
+.lab-people.is-three-up { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 720px) { .lab-people.is-three-up { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .lab-people.is-three-up { grid-template-columns: 1fr; } }
+.lab-person .lab-bio { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 8px; line-height: 1.6; }
+
+.lab-person .lab-focus > span { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 2px; }
+
+/* --- Footer: labelled contact pairs -------------------------------------- */
+.lab-contact { margin: 0; display: grid; gap: 8px 0; }
+
+.lab-contact dt { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+
+.lab-contact dd { margin: 0 0 4px; font-size: 14.5px; color: var(--ink-soft); }
+
+/* --- Equipment counts ----------------------------------------------------- */
+.lab-count { font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--soil); vertical-align: middle; margin-left: 4px; }
+
+/* --- Shared small print --------------------------------------------------- */
+.lab-note { font-size: 14px; color: var(--ink-faint); max-width: var(--measure); }
+
+/* --- Publications: session entries read quieter than papers --------------- */
+.lab-pub.is-session { border-left-style: dotted; }
+
+.lab-pub.is-session .lab-pub-title { font-weight: 550; font-size: 15.5px; }
+
+/* --- Media & coverage ------------------------------------------------------ */
+.lab-media { list-style: none; margin: 0; padding: 0; }
+
+.lab-media-item { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+
+.lab-media-item:first-child { border-top: 1px solid var(--rule); }
+
+.lab-media-meta { display: flex; flex-direction: column; gap: 7px; }
+
+.lab-media-meta time { font-family: var(--mono); font-size: 11.5px; color: var(--ink-faint); }
+
+.lab-kind { display: inline-block; width: fit-content; font-family: var(--mono); font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; border: 1px solid; }
+
+.lab-kind.is-broadcast { color: var(--soil); background: var(--soil-soft); border-color: color-mix(in srgb, var(--soil) 35%, transparent); }
+
+.lab-kind.is-news, .lab-kind.is-feature { color: var(--green); background: var(--green-soft); border-color: color-mix(in srgb, var(--green) 35%, transparent); }
+
+.lab-media-item h3 { font-size: 18px; margin: 0 0 4px; line-height: 1.3; }
+
+.lab-media-item h3 a { text-decoration: none; }
+
+.lab-media-item h3 a:hover { text-decoration: underline; }
+
+.lab-outlet { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 8px; }
+
+.lab-media-sum { font-size: 14.5px; color: var(--ink-soft); margin: 0; max-width: 62ch; }
+
+@media (max-width: 640px) { .lab-media-item { grid-template-columns: 1fr; gap: 10px; }
+  .lab-media-meta { flex-direction: row; align-items: center; gap: 12px; } }
+/* .lab-year is tuned for 4-digit years; a full phrase needs normal type. */
+.lab-year.is-label { font-family: var(--serif); font-size: 22px; font-weight: 600; letter-spacing: -0.015em; text-transform: none; color: var(--ink); margin-top: 44px; }
+
+/* =========================================================================== GALLERY — added 2026-10-09 =========================================================================== */
+.lab-gallery { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 22px; }
+
+/* The lead shot spans two columns so the page opens on one strong image instead of a flat uniform grid. */
+/* Two columns AND two rows: the feature photo is twice as tall as its neighbours, so letting it span both rows lets the next tile fill the gap under the first small one instead of leaving a blank patch. */
+.lab-shot.is-feature { grid-column: span 2; grid-row: span 2; }
+
+@media (max-width: 680px) { .lab-shot.is-feature { grid-column: span 1; grid-row: span 1; } }
+.lab-shot { margin: 0; }
+
+.lab-shot a { display: block; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; background: var(--surface-2, var(--surface)); line-height: 0; /* kill the inline-image descender gap */ }
+
+.lab-shot img { width: 100%; height: auto; /* same reason as .lab-strip img above */ aspect-ratio: 3 / 2; object-fit: cover; display: block; transition: transform 220ms ease; }
+
+.lab-shot a { cursor: zoom-in; }
+
+.lab-shot a:hover img, .lab-shot a:focus-visible img { transform: scale(1.03); }
+
+.lab-shot a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .lab-shot img { transition: none; }
+  .lab-shot a:hover img, .lab-shot a:focus-visible img { transform: none; } }
+/* --- People: "Currently working on" project list ------------------------- */
+.lab-projects { margin-top: 12px; }
+
+.lab-projects-h { display: block; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--soil); margin-bottom: 6px; }
+
+.lab-projects ul { margin: 0; padding-left: 16px; font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); }
+
+.lab-projects li { margin-bottom: 4px; }
+
+.lab-projects li::marker { color: var(--green); }
+
+/* --- Homepage gallery strip --------------------------------------------- */
+.lab-strip { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+@media (max-width: 760px) { .lab-strip { grid-template-columns: repeat(2, 1fr); } }
+.lab-strip a { display: block; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; line-height: 0; }
+
+.lab-strip img { width: 100%; height: auto; /* REQUIRED: the width/height HTML attrs otherwise pin the height to 933px and aspect-ratio is ignored */ aspect-ratio: 4 / 3; object-fit: cover; display: block; transition: transform 220ms ease; }
+
+.lab-strip a:hover img { transform: scale(1.04); }
+
+.lab-strip a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .lab-strip img { transition: none; }
+  .lab-strip a:hover img { transform: none; } }
+/* --- Software page: keep a lone card card-sized --------------------------- .lab-cards uses auto-fit, which collapses empty tracks, so a single card stretches to the full 1000px row. auto-fill keeps the empty tracks, so one card stays one column wide and a second simply sits beside it. 340px (not the 258px used elsewhere) because software summaries run long. */
+.lab-cards.is-fill { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+
+/* Link pills inside a card (Software page) were touching the summary text. */
+.lab-card .lab-pub-links { margin-top: 14px; }
+
+
+/* mirror the dark palette onto an explicit attribute so a host page's
+   theme toggle works, not just the OS setting */
+:root[data-theme="dark"] {  --green: #6bc9a0; --green-deep: #a6e3c6; --green-soft: #16302a; --soil: #e39355; --soil-soft: #2f2118; --paper: #0b1512; --surface: #111f1b; --ink: #e7eee9; --ink-soft: #a0b3a9; --ink-faint: #8aa096; --rule: #25392f;  }
+
+/* --- Photo viewer (wave 1) --- */
+[tabindex="-1"]:focus { outline: none; }
+.lab-lightbox { border: 0; padding: 0; background: transparent; max-width: min(96vw, 1400px); max-height: 96vh; overflow: visible; color: #fff; }
+.lab-lightbox::backdrop { background: rgba(5, 12, 10, 0.88); }
+.lab-lb-bar { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.lab-lb-btn { font: 600 14px var(--sans); color: #fff; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.5); border-radius: var(--radius); padding: 9px 16px; min-height: 44px; cursor: pointer; }
+.lab-lb-btn:hover { background: rgba(255,255,255,0.24); }
+.lab-lb-btn:focus-visible { outline: 2px solid #f7d5a6; outline-offset: 2px; }
+.lab-lightbox img { display: block; max-width: 100%; max-height: 82vh; width: auto; height: auto; margin: 0 auto; border-radius: var(--radius); }
+
+/* --- Wave 7: profile page --- */
+.lab-profile-grid { display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: 40px; align-items: start; margin-top: 18px; }
+.lab-profile-photo { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--rule); margin-bottom: 22px; }
+.lab-profile-grid h2 { font-size: 22px; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
+.lab-profile-side .lab-contact dd { margin-bottom: 10px; }
+.lab-statement { max-width: 68ch; }
+.lab-statement p { font-size: 16.5px; line-height: 1.65; color: var(--ink-soft); margin: 0 0 14px; }
+.lab-statement strong { color: var(--ink); font-weight: 650; }
+@media (max-width: 760px) { .lab-profile-grid { grid-template-columns: 1fr; gap: 28px; } .lab-profile-photo { max-width: 300px; } }
+.lab-kind.is-broadcast { color: #8a4a1a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lab-kind.is-broadcast { color: var(--soil); } }
+:root[data-theme="dark"] .lab-kind.is-broadcast { color: var(--soil); }
+/* --- Wave 2 --- */
+.lab-ref { margin: 0; line-height: 1.55; overflow-wrap: anywhere; }
+.lab-ref strong { font-weight: 650; }
+/* WCAG 1.4.1: in-text links are underlined, not distinguished by colour alone. */
+.lab-prose a:not([class]), .lab-note a, .lab-lede a { text-decoration: underline; text-decoration-thickness: 1px; }
+.lab-subnav { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 0 8px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+.lab-subnav a { text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
+.lab-subnav a:hover { border-bottom-color: var(--green); }
